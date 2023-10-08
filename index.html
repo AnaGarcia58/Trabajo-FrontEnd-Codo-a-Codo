@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Codo a Codo</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="codoAcodoLogo.png" alt="Logo" class="d-inline-block align-text-center" style="margin-right: 20px;">
+                    <span class="conf-text white-text">Conf Bs. As.</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link custom-link gray-text active">La conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link custom-link gray-text">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link custom-link gray-text">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link custom-link gray-text">Conviértete en orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link custom-link green-text">Comprar tickets</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active img-overlay">
+                    <img src="imagen1.jpeg" class="d-block w-100" alt="...">
+                    <div class="overlay">
+                        <h2>Conf Bs. As</h2>
+                        <p>Bs As llega por primera vez a Argentina. Un evento para compartir con<br>
+                        nuestra comunidad el conocimiento y experiencia de los expertos que<br>
+                        están creando el futuro de Internet. Ven a conocer a miembros del<br>
+                        evento, a otros estudiantes de Codo a Codo y los oradores de primer<br>
+                        nivel que tenemos para ti. Te esperamos!</p>
+                        <div class="buttons">
+                            <button class="transparent-button">Quiero ser orador</button>
+                            <button class="green-button">Comprar tickets</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item img-overlay">
+                    <img src="imagen2.jpeg" class="d-block w-100" alt="...">
+                    <div class="overlay">
+                        <h2>Conf Hotel Don Diego</h2>
+                        <p>El Hotel Don Diego abre sus puertas por primera vez en un evento único. <br>
+                        Un lugar para compartir con nuestra comunidad la hospitalidad y la<br> 
+                        experiencia de expertos que están marcando el futuro de la hospitalidad<br> 
+                        en la industria hotelera. Ven a conocer a miembros del equipo,¡Te esperamos!<br> 
+                        <div class="buttons">
+                            <button class="transparent-button">Quiero ser orador</button>
+                            <button class="green-button">Comprar tickets</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item img-overlay">
+                    <img src="imagen3.jpeg" class="d-block w-100" alt="...">
+                    <div class="overlay">
+                      <h2>Conf Bs. As 2024</h2>
+                      <p>Bs As llegará por segunda vez en Marzo del 2024 a Argentina.<br>
+                      Nuestra comunidad el conocimiento y experiencia de los expertos que<br>
+                      están creando el futuro de Internet. Ven a conocer a miembros del<br>
+                      evento, a otros estudiantes de Codo a Codo y los oradores de primer<br>
+                      nivel que tenemos para ti. Te esperamos!</p>
+                      <div class="buttons">
+                            <button class="transparent-button">Quiero ser orador</button>
+                            <button class="green-button">Comprar tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+          </button>
+          
+        </div>
+    </div>
+
+    <!-- Sección de oradores -->
+    <div class="oradores">
+      <section class="speakers-section">
+        <div class="container">
+            <h2 class="section-title">CONOCE LOS</h2>
+            <h1 class="section-title-lg">ORADORES</h1>
+            <div class="row">
+                <!-- Tarjeta de Steve Jobs -->
+                <div class="col-md-4">
+                    <div class="speaker-card">
+                        <img src="speaker1.jpeg" class="d-block w-100" alt="Speaker 1">
+                        <div class="speaker-details">
+                            <div class="speaker-buttons">
+                                <button class="yellow-button">JavaScript</button>
+                                <button class="blue-button">React</button>
+                            </div>
+                            <h3 class="speaker-name">Steve Jobs</h3>
+                            <p class="speaker-description">Steve Jobs fue un innovador en la <br>
+                              industria de la tecnología y un <br>
+                              orador inspirador.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta de Bill Gates -->
+                <div class="col-md-4">
+                    <div class="speaker-card">
+                        <img src="speaker2.jpeg" class="d-block w-100" alt="Speaker 2">
+                        <div class="speaker-details">
+                            <div class="speaker-buttons">
+                                <button class="yellow-button">JavaScript</button>
+                                <button class="blue-button">React</button>
+                            </div>
+                            <h3 class="speaker-name">Bill Gates</h3>
+                            <p class="speaker-description">Bill Gates es un visionario en la <br>
+                              industria de la tecnología y un <br>
+                              destacado orador.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta de Ada Lovelace -->
+                <div class="col-md-4">
+                    <div class="speaker-card">
+                        <img src="speaker3.jpg" class="d-block w-100" alt="Speaker 3" >
+                        <div class="speaker-details">
+                            <div class="speaker-buttons">
+                                <button class="purple-button">Negocios</button>
+                                <button class="red-button">Startups</button>
+                            </div>
+                            <h3 class="speaker-name">Ada Lovelace</h3>
+                            <p class="speaker-description">Ada Lovelace fue una pionera en la<br> 
+                              programación y una destacada oradora <br>
+                              en el campo de la tecnología.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- sección tarjeta + texto -->
+        <section class="event-section">
+          <div class="container-fluid"> <!-- Cambiar container por container-fluid -->
+              <div class="row"> <!-- Agregar una fila para las tarjetas -->
+                  <!-- Tarjeta de la imagen -->
+                  <div class="col-md-6 event-card">
+                      <img src="buenos-aires.jpeg" alt="Imagen del evento" class="event-image">
+                  </div>
+                  <!-- Tarjeta del texto -->
+                  <div class="col-md-6 event-card">
+                      <div class="event-text">
+                          <h2>Bs As Octubre</h2>
+                          <p>Texto que describe el evento que se realizará en la costa de Buenos Aires en Octubre del 2023.</p>
+                          <a href="#" class="white-button">Conocé más</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+                  
+
+
+
+                  <!-- Formulario -->
+                  <section class="orador-section">
+                    <div class="container">
+                        <h2 class="section-title">CONVIÉRTETE EN UN</h2>
+                        <h1 class="section-title-lg">ORADOR</h1>
+                        <p>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
+                        <form class="orador-form">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="mensaje" rows="5" placeholder="Sobre qué quieres hablar?"></textarea>
+                            </div>
+                            <p class="left-align">Recuerda incluir un título para tu charla</p>
+                            <button class="green-button enviar-button">Enviar</button>
+                        </form>
+                    </div>
+                </section>
+                
+                </div>
+      </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+      <div class="footer-links">
+          <a href="#">Preguntas Frecuentes</a>
+          <a href="#">Contáctanos</a>
+          <a href="#">Prensa</a>
+          <a href="#">Conferencias</a>
+          <a href="#">Términos y condiciones</a>
+          <a href="#">Privacidad</a>
+          <a href="#">Estudiantes</a>
+      </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
