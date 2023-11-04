@@ -1,87 +1,58 @@
 /* Estilo para el logo */
-
 .navbar-brand img {
     width: 25%;
-    /* Reducir el ancho al 25% */
     height: auto;
-    /* Mantener la relación de aspecto */
 }
 
 .navbar {
     position: relative;
-    z-index: 2;
-    /* Asegura que el contenido del nav esté encima del carrusel */
+    z-index: 2; /* Asegura que el contenido del nav esté encima del carrusel */
 }
 
 .navbar-brand {
     position: relative;
-    z-index: 2;
-    /* Asegura que el logo y el texto estén en la parte superior del contenido del nav */
+    z-index: 2; /* Asegura que el logo y el texto estén en la parte superior del contenido del nav */
 }
 
-
 /* Estilo para el primer div dentro del nav */
-
 .navbar .container-fluid {
     position: sticky;
     z-index: 2;
-    /* Coloca el primer div encima del carrusel */
     background-color: #232229;
-    /* Mantén el fondo negro */
     padding: 30px;
-    /* Ajusta el padding */
 }
 
-
 /* Estilo para el texto "Conf Bs. As." en color blanco */
-
 .white-text {
     color: white;
 }
 
-
 /* Estilo para los enlaces personalizados en gris */
-
 .custom-link.gray-text {
     color: gray;
     margin-right: 20px;
-    /* Espacio entre cada botón en píxeles */
     text-decoration: none;
-    /* Elimina el subrayado de los enlaces */
-    font-size: 75%;
-    /* Tamaño de la fuente deseado */
+    font-size: 75%; 
 }
 
-
 /* Estilo para el enlace personalizado en verde */
-
 .custom-link.green-text {
     color: green;
     margin-right: 20px;
-    /* Espacio entre cada botón en píxeles */
     text-decoration: none;
-    /* Elimina el subrayado de los enlaces */
     font-size: 75%;
-    /* Tamaño de la fuente deseado */
 }
 
-
 /* Estilo para el enlace activo en blanco */
-
 .custom-link.active {
     color: white;
     text-decoration: none;
-    /* Elimina el subrayado del enlace activo */
     font-size: 75%;
-    /* Tamaño de la fuente deseado */
 }
 
-
 /* Estilo para las imágenes superpuestas */
-
 .img-overlay {
-    position: relative;
-    /* Agregamos posición relativa para permitir que el overlay funcione correctamente */
+    position: relative; /* Agregamos posición relativa para permitir que el overlay funcione correctamente */
 }
 
 .img-overlay::before {
@@ -96,9 +67,7 @@
     pointer-events: none;
 }
 
-
 /* Estilo para el nuevo div superpuesto */
-
 .overlay {
     z-index: 2;
     position: absolute;
@@ -106,12 +75,9 @@
     left: 0;
     color: white;
     padding: 20px;
-    /* Ajusté el padding para que no sea demasiado grande */
     text-align: right;
-    width: 100%;
-    /* Hacemos que el overlay tenga el ancho completo del contenedor padre */
-    box-sizing: border-box;
-    /* Evita que el padding incremente el ancho */
+    width: 100%; /* Hacemos que el overlay tenga el ancho completo del contenedor padre */
+    box-sizing: border-box; /* Evita que el padding incremente el ancho */
 }
 
 .overlay h2 {
@@ -145,21 +111,16 @@
     border-radius: 5px;
 }
 
-
 /* Estilo para el carrusel */
-
 #carouselExampleAutoplaying {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     z-index: 0;
-    /* Coloca el carrusel detrás del primer div */
 }
 
-
 /* Estilo para el carrusel cuando la pantalla esté minimizada */
-
 @media (max-width: 991px) {
     /* Reduce el tamaño de los botones en la versión minimizada a la mitad */
     .overlay {
@@ -169,25 +130,26 @@
         left: 0;
         color: white;
         padding: 0px;
-        /* Ajusté el padding para que no sea demasiado grande */
         text-align: right;
         width: 100%;
-        /* Hacemos que el overlay tenga el ancho completo del contenedor padre */
         box-sizing: border-box;
-        /* Evita que el padding incremente el ancho */
     }
+    
     .overlay h2 {
         font-size: 120%;
         margin-right: 10%;
     }
+    
     .overlay p {
         font-size: 80%;
         margin-right: 10%;
     }
+    
     .overlay .buttons {
         margin-top: 0px;
         margin-right: 0%;
     }
+    
     .transparent-button,
     .green-button {
         background-color: transparent;
@@ -197,79 +159,63 @@
         margin-right: 20px;
         cursor: pointer;
         border-radius: 5px;
-        /* Radio del borde */
         margin-bottom: 10px;
     }
+    
     .green-button {
         background-color: green;
         border-radius: 5px;
-        /* Radio del borde */
     }
 }
 
 
-/* Estilo para los botones de control del carrusel */
 
+/* Estilo para los botones de control del carrusel */
 .carousel-control-prev,
 .carousel-control-next {
-    width: 50px;
-    /* Ancho deseado de los botones */
-    height: 50px;
-    /* Altura deseada de los botones */
-    background: rgba(0, 0, 0, 0.5);
-    /* Fondo semi-transparente */
-    border-radius: 50%;
-    /* Hace que los botones tengan bordes redondeados */
-    font-size: 2rem;
-    /* Tamaño de fuente de los botones */
+    width: 50px; /* Ancho deseado de los botones */
+    height: 50px; /* Altura deseada de los botones */
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    border-radius: 50%; /* Hace que los botones tengan bordes redondeados */
+    font-size: 2rem; /* Tamaño de fuente de los botones */
     position: absolute;
-    top: 50%;
-    /* Centrar verticalmente */
-    transform: translateY(-50%);
-    /* Alinear verticalmente al centro */
-    z-index: 2;
-    /* Asegura que los botones estén sobre el carrusel */
-    color: white;
-    /* Color del ícono del botón */
-    border: none;
-    /* Eliminar el borde */
-    cursor: pointer;
-    /* Cambia el cursor al pasar el mouse por encima */
-    display: flex;
-    /* Hace que el contenido dentro del botón esté centrado */
-    align-items: center;
-    /* Centra verticalmente el contenido dentro del botón */
-    justify-content: center;
-    /* Centra horizontalmente el contenido dentro del botón */
+    top: 50%; /* Centrar verticalmente */
+    transform: translateY(-50%); /* Alinear verticalmente al centro */
+    z-index: 2; /* Asegura que los botones estén sobre el carrusel */
+    color: white; /* Color del ícono del botón */
+    border: none; /* Eliminar el borde */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse por encima */
+    display: flex; /* Hace que el contenido dentro del botón esté centrado */
+    align-items: center; /* Centra verticalmente el contenido dentro del botón */
+    justify-content: center; /* Centra horizontalmente el contenido dentro del botón */
 }
 
 .carousel-control-prev {
     left: 10px;
-    /* Establecer posición a la izquierda */
 }
 
 .carousel-control-next {
     right: 10px;
-    /* Establecer posición a la derecha */
 }
-
 
 /* Estilo para las imágenes dentro del carrusel */
-
 #carouselExampleAutoplaying img {
     max-height: 500px;
-    /* Establece la altura máxima deseada */
     width: auto;
-    /* Ajusta automáticamente el ancho para mantener la relación de aspecto */
 }
+
+
+
+
+
 
 
 /* Estilos para la sección de oradores */
-
 .speakers-section {
     background-color: #f7f7f7;
     padding: 50px;
 }
+
 
 .section-title {
     font-size: 120%;
@@ -284,9 +230,7 @@
     margin-bottom: 30px;
 }
 
-
 /* Estilos para las tarjetas de oradores */
-
 .speaker-card {
     border: 1px solid #ccc;
     margin-bottom: 0px;
@@ -317,9 +261,7 @@
     cursor: pointer;
     font-size: 95%;
     font-weight: bold;
-    /* Agrega negrita */
     border-radius: 5px;
-    /* Redondea las esquinas */
 }
 
 .blue-button {
@@ -329,9 +271,7 @@
     cursor: pointer;
     font-size: 95%;
     font-weight: bold;
-    /* Agrega negrita */
     border-radius: 5px;
-    /* Redondea las esquinas */
 }
 
 .purple-button {
@@ -341,9 +281,7 @@
     cursor: pointer;
     font-size: 95%;
     font-weight: bold;
-    /* Agrega negrita */
     border-radius: 5px;
-    /* Redondea las esquinas */
 }
 
 .red-button {
@@ -353,9 +291,7 @@
     cursor: pointer;
     font-size: 95%;
     font-weight: bold;
-    /* Agrega negrita */
-    border-radius: 5px;
-    /* Redondea las esquinas */
+    border-radius: 5px; 
 }
 
 .speaker-name {
@@ -371,10 +307,7 @@
 .oradores {
     margin-top: 400px;
 }
-
-
 /* Estilo para la sección de oradores cuando la pantalla esté minimizada */
-
 @media (max-width: 991px) {
     .oradores {
         margin-top: 200px;
@@ -382,44 +315,33 @@
 }
 
 
-/* Estilos para la nueva sección del evento */
 
+/* Estilos para la nueva sección del evento */
 .event-section {
     color: white;
     padding: 50px 0;
 }
 
 .event-card {
-    padding: 0;
-    /* Eliminar el espacio interno de la tarjeta */
+    padding: 0; 
     margin: 0;
-    /* Eliminar el margen de la tarjeta */
     border: none;
-    /* Eliminar el borde de la tarjeta */
-    display: flex;
-    /* Usar flexbox para alinear elementos uno al lado del otro */
+    display: flex; 
 }
 
 .event-image {
     max-width: 100%;
-    height: auto;
-    /* Ajustar la altura automáticamente */
-    margin-right: 20px;
-    /* Espacio a la derecha de la imagen (opcional) */
+    height: auto; 
+    margin-right: 20px; 
 }
 
 .event-text {
     text-align: left;
     padding-left: 20px;
-    /* Espacio a la izquierda del texto */
     background-color: rgba(72, 87, 101, 0.9);
-    /* Fondo griz azulado opaco para el texto */
     padding: 20px;
-    /* Añadir espacio interno al texto */
     border-radius: 0;
-    /* Eliminar el borde redondeado del texto */
     flex-grow: 1;
-    /* Permite que el texto ocupe todo el espacio restante */
 }
 
 .event-text h2 {
@@ -437,13 +359,11 @@
     color: white;
     border: 2px solid white;
     border-radius: 5px;
-    /* Radio del borde */
     padding: 10px 20px;
     cursor: pointer;
     font-size: 18px;
     transition: background-color 0.3s, color 0.3s;
     text-decoration: none;
-    /* Eliminar el subrayado en los botones */
 }
 
 .white-button:hover {
@@ -451,10 +371,15 @@
     color: rgba(72, 87, 101, 0.9);
 }
 
+
+
+
+
+
+
 .orador-section {
     background-color: #f7f7f7;
     padding: 10px 0;
-    /* Reducir el espacio vertical en la parte superior e inferior */
     text-align: center;
 }
 
@@ -462,7 +387,6 @@
     font-size: 120%;
     color: #333;
     margin-bottom: 10px;
-    /* Reducir el espacio inferior del título */
 }
 
 .section-title-lg {
@@ -483,7 +407,6 @@
 
 .form-control {
     margin-bottom: 10px;
-    /* Reducir el espacio inferior de los campos */
     border-radius: 0;
     width: 100%;
 }
@@ -491,14 +414,12 @@
 textarea.form-control {
     height: 150px;
     padding: 15px;
-    /* Reducir el espacio interior del campo de texto */
     width: 100%;
 }
 
 .left-align {
     text-align: left;
     margin-bottom: 10px;
-    /* Reducir el espacio inferior del texto "Recuerda incluir un título para tu charla" */
 }
 
 .form-row {
@@ -507,15 +428,11 @@ textarea.form-control {
 }
 
 .form-group {
-    flex-basis: calc(50% - 5px);
-    /* Reducir el espacio entre los campos de Nombre y Apellido */
+    flex-basis: calc(50% - 5px); /* Reducir el espacio entre los campos de Nombre y Apellido */
     margin-bottom: 10px;
-    /* Reducir el espacio inferior de los campos de Nombre y Apellido */
 }
 
-
 /* Estilo para el botón "Enviar" en la sección del formulario */
-
 .enviar-button {
     border-radius: 5px;
     margin-top: 10px;
@@ -523,34 +440,157 @@ textarea.form-control {
 }
 
 
-/* Estilos para el footer */
 
+
+
+
+
+
+/* Estilos para el footer */
 .footer {
     background-color: #10375f;
-    /* Fondo color azul francia */
     color: white;
-    /* Texto en color blanco */
     padding: 20px 0;
-    /* Espaciado interior */
     text-align: center;
-    /* Centra el contenido del footer */
 }
-
 
 /* Estilos para los enlaces en el footer */
-
 .footer-links a {
     color: white;
-    /* Texto en color blanco */
     text-decoration: none;
-    /* Elimina el subrayado de los enlaces */
     margin: 0 10px;
-    /* Margen entre los enlaces */
+}
+
+/* Estilos para eliminar el subrayado en los enlaces al pasar el mouse */
+.footer-links a:hover {
+    text-decoration: none;
 }
 
 
-/* Estilos para eliminar el subrayado en los enlaces al pasar el mouse */
 
-.footer-links a:hover {
-    text-decoration: none;
+
+
+/* scripts de la sección "comprar tickets" */
+
+/* Estilos para las categorías no seleccionadas */
+.category-box {
+    border: 2px solid #007bff; /* Borde azul para no seleccionadas */
+    margin: 10px;
+    cursor: pointer;
+    background: transparent;
+}
+
+/* Estilos para la categoría seleccionada */
+.category-box.selected {
+    border: 2px solid yellow;
+    background: transparent;
+}
+
+/* Estilos para centrar los botones de categoría */
+.categories-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px; 
+}
+
+/* Estilos para el texto "VENTA" */
+.venta-text {
+    text-align: center;
+    font-size: 15px;
+}
+
+/* Estilos para el formulario */
+.ticket-section {
+    text-align: center;
+    padding: 20px; 
+    max-width: 730px;
+    margin: 0 auto;
+
+}
+
+/* Estilos para el texto "VALOR DEL TICKET $xxx" */
+.ticket-price {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Estilos para el texto "Total a Pagar $xxx" del formulario */
+.total-to-pay {
+    border-radius: 7px;
+    background: #c5e0fd; 
+    padding: 1%;
+    margin-bottom: 15px;
+    text-align: left;
+}
+/* Estilo para el ComboBox */
+.select-arrow {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent url('flecha.png') no-repeat right center;
+    background-size: 20px; /* Ancho de la flecha */
+}
+
+/* Estilo para el ComboBox cuando está desplegado */
+.select-arrow:focus {
+    border: 2px solid #007bff; /* Cambia el borde al estar enfocado */
+}
+
+
+/* Estilo para los botones personalizados (Borrar y Resumen) */
+.custom-button {
+    background-color: rgb(123, 196, 74);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Estilo para el contenedor de los botones */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Estilo para el botón "Borrar" */
+#borrar {
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    width: 49%;
+    margin-top: 10px; 
+}
+
+/* Estilo para el botón "Resumen" */
+#resumen {
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    width: 49%;
+    margin-top: 10px; 
+}
+
+
+
+
+
+
+.resumen-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#resumen-compra {
+    background: #fff;
+    border: 2px solid #000;
+    padding: 20px;
 }
